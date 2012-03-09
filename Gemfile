@@ -36,7 +36,7 @@ group :development, :test do
   gem 'webmock', :require => false
   unless ENV['TRAVIS']
     gem 'ruby-debug', :platform => :mri_18
-    # gem 'ruby-debug19', :platform => :mri_19, :require => 'ruby-debug'
+    gem 'ruby-debug-base19x', '0.11.30.pre10', :platform => :mri_19
   end
   # gem 'rpm_contrib', :git => "git://github.com/bensymonds/rpm_contrib.git", :branch => "mongo-1.4.0_update"
 end
